@@ -1,9 +1,9 @@
 body {
-    background-image: url("assets/psychic");
+    background-image: url("https://github.com/CBArgento/Psychic-Game/blob/master/assets/images/psychic.jpg?raw=true");
     background-repeat: no-repeat;
-    background-position: right top;
-    margin-right: 200px;
-    background-attachment: fixed;
+    background-position: center;
+    background-size: 1950px 1200px;
+    padding: 10px;
   }
 
 
@@ -19,9 +19,15 @@ h3 {
 
 .answersbox {
     background: lightblue;
-    margin: 20px;
+    margin: 120px;
 }
 
 .title {
     padding: 10px;
+    color: white;
+}
+
+.guess {
+    color: white;
+    padding-right: 20px;
 }
