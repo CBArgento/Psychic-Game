@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--MY CSS-->
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
-    <link href="assets/javascript/game.js" type="text/javascript" rel="javascript">
+    <link href="assets\css\style.css" type="text/css" rel="stylesheet">
+    <script src="assets\javascript\game.js"> </script>
 </head>
 
 <body>
@@ -24,17 +24,33 @@
         <h2>Guess what letter I'm thinking of:</h2>
     </div>
     <br>
-    <div class="answersbox">
-        <div class="answers">
-            <H3>Wins:</H3>
-            <br>
-            <H3>Loses:</H3>
-            <br>
-            <H3>Guesses Left:</H3>
-            <br>
-            <H3>Your Guesses so far:</H3>
+    <div class="container">
+        <div class="center">
+            <div class="wrapper">
+
+                <h3>Won</h3>
+
+                <span id="won"></span>
+
+                <h3>Lost</h3>
+
+                <span id="lost"></span>
+
+                <p>Guesses Remaining...
+                    <span id="attempts"></span>
+                </p>
+
+                <p>Letters Already Guessed</p>
+
+                <span id="playerGuess"></span>
+
+                <h1>Guess the Psychic's Random Letter</h1>
+
+                <h3>You only have 10 guesses...choose wisely.</h3>
+            </div>
         </div>
-    </div>
+        </container>
+
 </body>
 
 </html>
