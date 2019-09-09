@@ -3,9 +3,13 @@ var won = 0;
 var lost = 0;
 var attempts = 10;
 var usedArray = [];
-var ranLetter = ranLetter;
+var ranLetter = '';
+
 var letters = "qwertyuiopasdfghjklzxcvbnm"
 
+var test = new Array(5);
+test[2] = 'd';
+console.log('here we go '+ test);
 //GENERATING THE COMPUTERS SECRET LETTER
 //Generates random number (decimal from 0 to 1) which is multiplied by 26 and the rounded down to the nearest whole number by the Math.floor method. 
 ranLetter = letters[Math.floor(Math.random() * letters.length)];
@@ -26,7 +30,9 @@ document.onkeyup = function (event) {
     // HANDELING CORRECT GUESSES
     //test if players guess equals ranLetter, if true it increments wins by 1, and clears used letters array. Supposed to reset guess # to 10 but starts at 9 instead, 
     if (playerGuess === ranLetter) {
-        jsGuess();
+    ranLetter = letters[Math.floor(Math.random() * letters.length)];
+
+//        jsGuess();
         won++;
         attempts = 10;
         usedArray = [];
@@ -42,12 +48,16 @@ document.onkeyup = function (event) {
 
     //when remaining attempts equals zero, lost is incrimented by 1; attempts is reset to 10, and used letters array is cleared
     if (attempts == 0) {
-        jsGuess();
+//        jsGuess();
+    ranLetter = letters[Math.floor(Math.random() * letters.length)];
+
         lost++;
         usedArray = []
         attempts = 10;
 
     }
+
+    console.log(usedArray);
 
     //HANDELING INCORRECT GUESSES - OUTPUT
     //this 'if' prevents a letter selected a 2nd time from being written to the usedArray again, although it still counts as a guess

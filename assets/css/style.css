@@ -1,0 +1,20 @@
+body {
+    padding: 15px;
+    background-image: url("https://github.com/CBArgento/Psychic-Game/blob/master/assets/images/psychic.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1950px 1200px;
+
+}
+
+.answers {
+    background: gray;
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+h1, h2 {
+    color: white;
+}
